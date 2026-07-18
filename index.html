@@ -1,0 +1,647 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>그린테이블 - 건강한 한 끼, 지구를 생각하는 선택</title>
+    <meta name="description" content="그린테이블은 신선한 식재료와 친환경 패키지를 바탕으로 맛있는 건강 도시락과 샐러드를 제공하는 도심 속 친환경 식탁 브랜드입니다.">
+    <!-- Pretendard 폰트 로드 -->
+    <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css" />
+    <!-- Font Awesome 아이콘 로드 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- 커스텀 CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- GNB (글로벌 네비게이션 바) -->
+    <header id="header" class="site-header">
+        <div class="header-container">
+            <a href="#home" class="logo" id="logo-link">
+                <img src="images/logo.png" alt="그린테이블 로고" class="logo-img">
+            </a>
+            
+            <nav class="nav-menu" id="nav-menu">
+                <ul>
+                    <li><a href="#home" class="nav-link active">Home</a></li>
+                    <li><a href="#brand" class="nav-link">Brand</a></li>
+                    <li><a href="#menu" class="nav-link">Menu</a></li>
+                    <li><a href="#eco" class="nav-link">Eco</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+            </nav>
+
+            <div class="header-cta">
+                <a href="#contact" class="btn btn-outline btn-sm">문의하기</a>
+            </div>
+
+            <!-- 모바일 햄버거 버튼 -->
+            <button class="hamburger-btn" id="hamburger-btn" aria-label="메뉴 열기">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- 모바일 전용 모달 네비게이션 메뉴 -->
+    <div class="mobile-nav" id="mobile-nav">
+        <div class="mobile-nav-header">
+            <img src="images/logo.png" alt="그린테이블 로고" class="logo-img-mobile">
+            <button class="close-btn" id="close-btn" aria-label="메뉴 닫기">&times;</button>
+        </div>
+        <ul class="mobile-nav-links">
+            <li><a href="#home" class="mobile-link">Home</a></li>
+            <li><a href="#brand" class="mobile-link">Brand</a></li>
+            <li><a href="#menu" class="mobile-link">Menu</a></li>
+            <li><a href="#eco" class="mobile-link">Eco</a></li>
+            <li><a href="#contact" class="mobile-link">Contact</a></li>
+        </ul>
+        <div class="mobile-nav-footer">
+            <a href="#contact" class="btn btn-primary btn-block">주문 문의하기</a>
+        </div>
+    </div>
+
+    <!-- 메인 비주얼 영역 (Hero Section) -->
+    <section id="home" class="hero-section">
+        <div class="hero-bg" style="background-image: url('images/hero-banner.png');">
+            <div class="overlay"></div>
+        </div>
+        <div class="hero-content container">
+            <span class="badge hero-badge">Premium Eco Bento</span>
+            <h1 class="hero-title animate-up">건강한 한 끼,<br>지구를 생각하는 선택</h1>
+            <p class="hero-desc animate-up">그린테이블은 신선한 재료와 친환경 포장으로<br>건강하고 맛있는 도시락과 샐러드를 제공합니다.</p>
+            <div class="hero-buttons animate-up">
+                <a href="#menu" class="btn btn-primary">메뉴 보기</a>
+                <a href="#contact" class="btn btn-accent">주문 문의하기</a>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <span>Scroll Down</span>
+            <i class="fa-solid fa-chevron-down bounce"></i>
+        </div>
+    </section>
+
+    <!-- 브랜드 소개 영역 (Brand Section) -->
+    <section id="brand" class="brand-section section-padding">
+        <div class="container">
+            <div class="section-header text-center">
+                <h2 class="section-title">Brand Story</h2>
+                <p class="section-subtitle">도심 속 친환경 식탁, 그린테이블의 이야기를 소개합니다.</p>
+            </div>
+
+            <!-- Z-Pattern Layout -->
+            <div class="brand-story-grid">
+                <div class="story-item animate-on-scroll">
+                    <div class="story-text">
+                        <span class="story-number">01</span>
+                        <h3>바쁜 도시 생활 속,<br>가장 자연에 가까운 한 끼</h3>
+                        <p>매일 반복되는 지친 일상에서 건강한 식사를 챙기기란 쉽지 않습니다. 그린테이블은 복잡한 도심 한복판에서도 푸른 숲 속의 식탁을 마주하듯, 몸과 마음이 건강해지는 프리미엄 건강 식단을 선사합니다.</p>
+                    </div>
+                    <div class="story-image skeleton-container">
+                        <img class="lazy-image" data-src="images/hero-banner.png" alt="그린테이블 샐러드 이미지">
+                    </div>
+                </div>
+
+                <div class="story-item reversed animate-on-scroll">
+                    <div class="story-text">
+                        <span class="story-number">02</span>
+                        <h3>귀여운 마스코트 '초록이'와<br>함께하는 지구 지키기</h3>
+                        <p>그린테이블의 친환경 마스코트 '초록이'는 우리가 먹는 건강한 음식이 건강한 지구에서 시작된다고 믿습니다. 제로 웨이스트 실천을 돕기 위해 생분해 패키지 연구와 지구를 구하는 작은 걸음을 앞장서 실천하고 있습니다.</p>
+                    </div>
+                    <div class="story-image skeleton-container">
+                        <img class="lazy-image" data-src="images/character.png" alt="그린테이블 캐릭터 초록이">
+                    </div>
+                </div>
+            </div>
+
+            <!-- 핵심 가치 3개 (Fresh, Healthy, Eco-friendly) -->
+            <div class="brand-values">
+                <div class="value-card animate-on-scroll">
+                    <div class="value-icon">
+                        <i class="fa-solid fa-leaf"></i>
+                    </div>
+                    <h4>Fresh</h4>
+                    <p>당일 새벽에 배송된 유기농 채소와 로컬 푸드를 사용하여 아삭한 식감과 높은 영양소를 그대로 보존합니다.</p>
+                </div>
+
+                <div class="value-card animate-on-scroll" style="animation-delay: 0.1s;">
+                    <div class="value-icon">
+                        <i class="fa-solid fa-heart-pulse"></i>
+                    </div>
+                    <h4>Healthy</h4>
+                    <p>영양학 전문가가 설계한 탄단지(탄수화물·단백질·지방) 균형 식단으로, 맛있고 지속 가능한 건강 관리를 돕습니다.</p>
+                </div>
+
+                <div class="value-card animate-on-scroll" style="animation-delay: 0.2s;">
+                    <div class="value-icon">
+                        <i class="fa-solid fa-recycle"></i>
+                    </div>
+                    <h4>Eco-friendly</h4>
+                    <p>지구를 해치지 않는 100% 생분해 플라스틱(PLA) 용기와 친환경 종이박스만을 고집하여 소비 가치를 높입니다.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 메뉴 소개 영역 (Menu Section) -->
+    <section id="menu" class="menu-section section-padding bg-light">
+        <div class="container">
+            <div class="section-header text-center">
+                <h2 class="section-title">Our Menu</h2>
+                <p class="section-subtitle">신선하고 건강함이 가득 담긴 그린테이블의 대표 메뉴를 만나보세요.</p>
+            </div>
+
+            <!-- 베스트 메뉴 슬라이드 (Carousel) -->
+            <div class="best-menu-container animate-on-scroll">
+                <h3 class="carousel-title"><i class="fa-solid fa-crown text-accent"></i> 실시간 인기 베스트 메뉴</h3>
+                <div class="carousel-wrapper">
+                    <div class="carousel-track-container">
+                        <ul class="carousel-track" id="carousel-track">
+                            <!-- Slide 1 -->
+                            <li class="carousel-slide">
+                                <div class="carousel-card">
+                                    <div class="carousel-image skeleton-container">
+                                        <img class="lazy-image" data-src="images/menu-1.png" alt="그린 가든 샐러드">
+                                    </div>
+                                    <div class="carousel-info">
+                                        <span class="menu-tag tag-best">BEST</span>
+                                        <span class="menu-tag tag-vegan">VEGAN</span>
+                                        <h4>그린 가든 샐러드</h4>
+                                        <p class="carousel-desc">아삭한 로메인과 각종 제철 채소, 특제 오리엔탈 드레싱으로 입안 가득 신선함을 채우는 기본형 시그니처 샐러드</p>
+                                        <div class="menu-meta">
+                                            <span><i class="fa-solid fa-fire-flame-simple"></i> 320 kcal</span>
+                                            <span><i class="fa-solid fa-droplet"></i> 오리엔탈 드레싱</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <!-- Slide 2 -->
+                            <li class="carousel-slide">
+                                <div class="carousel-card">
+                                    <div class="carousel-image skeleton-container">
+                                        <img class="lazy-image" data-src="images/menu-2.png" alt="닭가슴살 아보카도 샐러드">
+                                    </div>
+                                    <div class="carousel-info">
+                                        <span class="menu-tag tag-best">BEST</span>
+                                        <span class="menu-tag tag-protein">고단백</span>
+                                        <h4>닭가슴살 아보카도 샐러드</h4>
+                                        <p class="carousel-desc">부드러운 수비드 닭가슴살과 숲속의 버터 아보카도가 만나 영양과 포만감을 동시에 충족시키는 건강 샐러드</p>
+                                        <div class="menu-meta">
+                                            <span><i class="fa-solid fa-fire-flame-simple"></i> 420 kcal</span>
+                                            <span><i class="fa-solid fa-droplet"></i> 스파이시 크림</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <!-- Slide 3 -->
+                            <li class="carousel-slide">
+                                <div class="carousel-card">
+                                    <div class="carousel-image skeleton-container">
+                                        <img class="lazy-image" data-src="images/menu-5.png" alt="수비드 비프 건강 도시락">
+                                    </div>
+                                    <div class="carousel-info">
+                                        <span class="menu-tag tag-protein">고단백</span>
+                                        <span class="menu-tag tag-best">HIT</span>
+                                        <h4>수비드 비프 건강 도시락</h4>
+                                        <p class="carousel-desc">육즙을 그대로 품은 소고기와 건강한 귀리밥, 다양한 구운 채소들로 풍성하게 구성한 프리미엄 도시락</p>
+                                        <div class="menu-meta">
+                                            <span><i class="fa-solid fa-fire-flame-simple"></i> 510 kcal</span>
+                                            <span><i class="fa-solid fa-droplet"></i> 고소한 참깨 소스</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- Carousel Navigation -->
+                    <button class="carousel-btn btn-left" id="carousel-prev" aria-label="이전 슬라이드">
+                        <i class="fa-solid fa-chevron-left"></i>
+                    </button>
+                    <button class="carousel-btn btn-right" id="carousel-next" aria-label="다음 슬라이드">
+                        <i class="fa-solid fa-chevron-right"></i>
+                    </button>
+                    <!-- Carousel Indicators -->
+                    <div class="carousel-nav" id="carousel-nav">
+                        <button class="carousel-dot active"></button>
+                        <button class="carousel-dot"></button>
+                        <button class="carousel-dot"></button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 전체 메뉴 카드형 레이아웃 6개 (Grid) -->
+            <div class="menu-grid-header">
+                <h3><i class="fa-solid fa-list-ul text-primary"></i> 그린테이블 대표 메뉴 라인업</h3>
+            </div>
+            <div class="menu-grid">
+                <!-- 카드 1 -->
+                <div class="menu-card animate-on-scroll">
+                    <div class="card-image skeleton-container">
+                        <img class="lazy-image" data-src="images/menu-1.png" alt="그린 가든 샐러드">
+                        <span class="card-badge tag-best">BEST</span>
+                    </div>
+                    <div class="card-body">
+                        <div class="card-tags">
+                            <span class="badge-mini">비건</span>
+                            <span class="badge-mini">저칼로리</span>
+                        </div>
+                        <h4 class="card-title">그린 가든 샐러드</h4>
+                        <p class="card-text">신선하고 아삭한 유기농 채소 믹스와 영양 가득 견과류, 상큼한 발사믹의 조합.</p>
+                        <div class="card-nutrition">
+                            <span><i class="fa-solid fa-circle-info"></i> 320kcal</span>
+                            <span>단백질 8g</span>
+                            <span>지방 5g</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 카드 2 -->
+                <div class="menu-card animate-on-scroll" style="animation-delay: 0.05s;">
+                    <div class="card-image skeleton-container">
+                        <img class="lazy-image" data-src="images/menu-2.png" alt="닭가슴살 아보카도 샐러드">
+                        <span class="card-badge tag-best">BEST</span>
+                    </div>
+                    <div class="card-body">
+                        <div class="card-tags">
+                            <span class="badge-mini">고단백</span>
+                            <span class="badge-mini">헬시</span>
+                        </div>
+                        <h4 class="card-title">닭가슴살 아보카도 샐러드</h4>
+                        <p class="card-text">수비드로 저온 조리해 촉촉한 닭가슴살 and 부드럽고 든든한 숲속의 버터 아보카도.</p>
+                        <div class="card-nutrition">
+                            <span><i class="fa-solid fa-circle-info"></i> 420kcal</span>
+                            <span>단백질 28g</span>
+                            <span>지방 12g</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 카드 3 -->
+                <div class="menu-card animate-on-scroll" style="animation-delay: 0.1s;">
+                    <div class="card-image skeleton-container">
+                        <img class="lazy-image" data-src="images/menu-3.png" alt="생연어 리코타 샐러드">
+                    </div>
+                    <div class="card-body">
+                        <div class="card-tags">
+                            <span class="badge-mini">오메가3</span>
+                            <span class="badge-mini">치즈</span>
+                        </div>
+                        <h4 class="card-title">생연어 리코타 샐러드</h4>
+                        <p class="card-text">매일 아침 입고되는 프리미엄 생연어의 쫄깃함과 수제 리코타 치즈의 깊고 풍부한 고소함.</p>
+                        <div class="card-nutrition">
+                            <span><i class="fa-solid fa-circle-info"></i> 450kcal</span>
+                            <span>단백질 22g</span>
+                            <span>지방 15g</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 카드 4 -->
+                <div class="menu-card animate-on-scroll" style="animation-delay: 0.15s;">
+                    <div class="card-image skeleton-container">
+                        <img class="lazy-image" data-src="images/menu-4.png" alt="비건 두부 소보로 도시락">
+                    </div>
+                    <div class="card-body">
+                        <div class="card-tags">
+                            <span class="badge-mini">비건</span>
+                            <span class="badge-mini">곤약밥</span>
+                        </div>
+                        <h4 class="card-title">비건 두부 소보로 도시락</h4>
+                        <p class="card-text">고소하게 볶아낸 두부 소보로와 향긋한 시래기 곤약밥으로 칼로리는 낮추고 영양은 가득 담은 비건 도시락.</p>
+                        <div class="card-nutrition">
+                            <span><i class="fa-solid fa-circle-info"></i> 380kcal</span>
+                            <span>단백질 14g</span>
+                            <span>지방 6g</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 카드 5 -->
+                <div class="menu-card animate-on-scroll" style="animation-delay: 0.2s;">
+                    <div class="card-image skeleton-container">
+                        <img class="lazy-image" data-src="images/menu-5.png" alt="수비드 비프 건강 도시락">
+                        <span class="card-badge tag-protein">고단백</span>
+                    </div>
+                    <div class="card-body">
+                        <div class="card-tags">
+                            <span class="badge-mini">포만감</span>
+                            <span class="badge-mini">파워식단</span>
+                        </div>
+                        <h4 class="card-title">수비드 비프 건강 도시락</h4>
+                        <p class="card-text">저온에서 12시간 숙성해 살살 녹는 부챗살 소고기와 면역력 강화에 좋은 잡곡밥 세트.</p>
+                        <div class="card-nutrition">
+                            <span><i class="fa-solid fa-circle-info"></i> 510kcal</span>
+                            <span>단백질 32g</span>
+                            <span>지방 10g</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 카드 6 -->
+                <div class="menu-card animate-on-scroll" style="animation-delay: 0.25s;">
+                    <div class="card-image skeleton-container">
+                        <img class="lazy-image" data-src="images/menu-6.png" alt="그릴드 슈림프 곤약 볶음밥">
+                    </div>
+                    <div class="card-body">
+                        <div class="card-tags">
+                            <span class="badge-mini">키토제닉</span>
+                            <span class="badge-mini">저탄수</span>
+                        </div>
+                        <h4 class="card-title">그릴드 슈림프 곤약 볶음밥</h4>
+                        <p class="card-text">불향을 입혀 그릴에 구운 새우와 저탄수 고섬유질 컬리플라워 곤약 볶음밥의 산뜻한 조합.</p>
+                        <div class="card-nutrition">
+                            <span><i class="fa-solid fa-circle-info"></i> 310kcal</span>
+                            <span>단백질 18g</span>
+                            <span>지방 4g</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 친환경 가치 소개 영역 (Eco Section) -->
+    <section id="eco" class="eco-section">
+        <!-- 패럴랙스 스타일 배경 -->
+        <div class="eco-parallax-bg" style="background-image: url('images/eco-package.png');">
+            <div class="overlay"></div>
+        </div>
+        <div class="container eco-content-wrapper">
+            <div class="eco-grid">
+                <div class="eco-text-container animate-on-scroll">
+                    <span class="eco-badge">Eco Friendly</span>
+                    <h2 class="eco-title">우리가 지키는 작은 실천,<br>지구를 위한 친환경 패키지</h2>
+                    <p class="eco-desc">그린테이블은 맛있는 한 끼를 넘어 지속 가능한 미래를 꿈꿉니다. 자연에서 태어나 다시 자연으로 부드럽게 돌아갈 수 있도록 배달 및 포장 과정 전반에 생분해성 소재를 사용합니다.</p>
+                    
+                    <!-- 친환경 인포그래픽 피토그램 -->
+                    <div class="eco-features">
+                        <div class="eco-feat-item">
+                            <div class="feat-icon"><i class="fa-solid fa-seedling"></i></div>
+                            <div class="feat-text">
+                                <h5>100% 생분해 PLA 용기</h5>
+                                <p>옥수수 전분에서 추출한 원료로 만들어 일반 매립 시 180일 이내에 분해되는 생분해 용기를 씁니다.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="eco-feat-item">
+                            <div class="feat-icon"><i class="fa-solid fa-box-open"></i></div>
+                            <div class="feat-text">
+                                <h5>사탕수수 친환경 펄프박스</h5>
+                                <p>나무를 베지 않고 설탕 제조 후 남은 사탕수수 찌꺼기로 만든 종이 상자를 사용하여 이산화탄소를 감축합니다.</p>
+                            </div>
+                        </div>
+
+                        <div class="eco-feat-item">
+                            <div class="feat-icon"><i class="fa-solid fa-droplet-slash"></i></div>
+                            <div class="feat-text">
+                                <h5>친환경 콩기름 잉크 인쇄</h5>
+                                <p>휘발성 유기화합물 배출이 없는 대두유 잉크로 종이 박스를 인쇄하여 재활용율을 혁신적으로 높였습니다.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="eco-image-container animate-on-scroll">
+                    <div class="eco-img-box skeleton-container">
+                        <img class="lazy-image" data-src="images/eco-package.png" alt="친환경 포장 용기 실물 사진">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 고객 후기 영역 (Reviews Section) -->
+    <section class="reviews-section section-padding bg-light">
+        <div class="container">
+            <div class="section-header text-center">
+                <h2 class="section-title">Customer Reviews</h2>
+                <p class="section-subtitle">그린테이블을 매일 이용하시는 고객들의 생생한 한 줄 후기입니다.</p>
+            </div>
+
+            <div class="reviews-grid">
+                <!-- 후기 1 -->
+                <div class="review-card animate-on-scroll">
+                    <div class="review-stars">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="review-text">"정기 배송으로 매일 샐러드를 받고 있어요. 다른 샐러드는 질리는데, 여기는 드레싱도 다양하고 채소가 엄청 아삭해요! 무엇보다 일회용 플라스틱 쓰레기가 안 나와서 마음 편히 먹습니다."</p>
+                    <div class="review-author">
+                        <div class="author-info">
+                            <span class="author-name">김민지 님</span>
+                            <span class="author-tag">직장인 (B2C 정기 구독 중)</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 후기 2 -->
+                <div class="review-card animate-on-scroll" style="animation-delay: 0.1s;">
+                    <div class="review-stars">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="review-text">"사내 세미나 단체 도시락으로 주문했는데 다들 맛있다고 칭찬 일색이었어요. 소고기 굽기도 적당하고 영양 균형도 최고입니다. 다 먹고 물로 헹궈 버리기만 해도 생분해된다니 회사 차원에서도 만족스러워요."</p>
+                    <div class="review-author">
+                        <div class="author-info">
+                            <span class="author-name">이준우 님</span>
+                            <span class="author-tag">인사팀 담당자 (B2B 단체 주문)</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 후기 3 -->
+                <div class="review-card animate-on-scroll" style="animation-delay: 0.2s;">
+                    <div class="review-stars">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                    </div>
+                    <p class="review-text">"다이어트 때문에 연어 샐러드랑 비건 두부 도시락 위주로 시켜 먹는데, 속이 정말 편합니다. 캐릭터도 너무 귀엽고 친환경적인 브랜드 이미지가 잘 맞아서 SNS에도 소문내고 있어요!"</p>
+                    <div class="review-author">
+                        <div class="author-info">
+                            <span class="author-name">박소현 님</span>
+                            <span class="author-tag">대학생 (B2C 일반 주문)</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 문의하기 영역 (Contact Section) -->
+    <section id="contact" class="contact-section section-padding">
+        <div class="container">
+            <div class="section-header text-center">
+                <h2 class="section-title">Order Inquiry</h2>
+                <p class="section-subtitle">정기 배송 및 단체 주문 관련 문의를 남겨주시면 신속하게 답변해 드리겠습니다.</p>
+            </div>
+
+            <div class="contact-wrapper">
+                <div class="contact-info-panel animate-on-scroll">
+                    <h3>Contact Information</h3>
+                    <p>그린테이블과 소통하는 다양한 채널입니다. 궁금한 점이 있으시다면 언제든 편하게 연락해주세요.</p>
+                    
+                    <div class="contact-details">
+                        <div class="detail-item">
+                            <i class="fa-solid fa-phone"></i>
+                            <div class="detail-text">
+                                <span>고객센터 및 전화상담</span>
+                                <strong>1544-0000</strong>
+                            </div>
+                        </div>
+
+                        <div class="detail-item">
+                            <i class="fa-solid fa-envelope"></i>
+                            <div class="detail-text">
+                                <span>이메일 문의</span>
+                                <strong>support@greentable.com</strong>
+                            </div>
+                        </div>
+
+                        <div class="detail-item">
+                            <i class="fa-solid fa-location-dot"></i>
+                            <div class="detail-text">
+                                <span>본사 위치</span>
+                                <strong>서울특별시 마포구 백범로 31, 그린테이블 스퀘어 4층</strong>
+                            </div>
+                        </div>
+
+                        <div class="detail-item">
+                            <i class="fa-solid fa-clock"></i>
+                            <div class="detail-text">
+                                <span>운영 시간</span>
+                                <strong>평일 09:00 - 18:00 (주말/공휴일 휴무)</strong>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="social-links">
+                        <a href="https://pf.kakao.com" target="_blank" class="social-btn kakao" aria-label="카카오톡 채널"><i class="fa-solid fa-comment"></i></a>
+                        <a href="https://instagram.com" target="_blank" class="social-btn instagram" aria-label="인스타그램"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://youtube.com" target="_blank" class="social-btn youtube" aria-label="유튜브"><i class="fa-brands fa-youtube"></i></a>
+                    </div>
+                </div>
+
+                <!-- 문의하기 폼 -->
+                <div class="contact-form-panel animate-on-scroll">
+                    <form id="inquiryForm" novalidate>
+                        <div class="form-row">
+                            <div class="form-group col-6">
+                                <label for="userName">이름 <span class="required">*</span></label>
+                                <input type="text" id="userName" name="userName" placeholder="홍길동" required>
+                                <span class="error-msg" id="name-error">이름을 입력해주세요.</span>
+                            </div>
+                            <div class="form-group col-6">
+                                <label for="userPhone">연락처 <span class="required">*</span></label>
+                                <input type="tel" id="userPhone" name="userPhone" placeholder="010-0000-0000" required>
+                                <span class="error-msg" id="phone-error">올바른 연락처 형식을 입력해주세요.</span>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="userEmail">이메일 <span class="required">*</span></label>
+                            <input type="email" id="userEmail" name="userEmail" placeholder="example@greentable.com" required>
+                            <span class="error-msg" id="email-error">올바른 이메일 주소를 입력해주세요.</span>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="orderType">주문 유형 <span class="required">*</span></label>
+                            <div class="custom-select-wrapper">
+                                <select id="orderType" name="orderType" required>
+                                    <option value="" disabled selected>주문 유형을 선택해주세요</option>
+                                    <option value="B2B_GROUP">B2B 회사/세미나 단체 주문</option>
+                                    <option value="B2C_SUBSCRIBE">B2C 정기 구독 배송 문의</option>
+                                    <option value="B2C_NORMAL">일반 대량 주문/행사 문의</option>
+                                    <option value="PARTNERSHIP">제휴 및 입점 문의</option>
+                                </select>
+                            </div>
+                            <span class="error-msg" id="order-error">주문 유형을 선택해주세요.</span>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message">문의 내용 <span class="required">*</span></label>
+                            <textarea id="message" name="message" rows="5" placeholder="희망 수량, 배송 희망일, 알레르기 유발 식재료 제한 사항 등 구체적인 세부 내용을 기재해주세요." required></textarea>
+                            <span class="error-msg" id="message-error">문의 내용을 작성해주세요.</span>
+                        </div>
+
+                        <div class="form-privacy-check">
+                            <input type="checkbox" id="privacyAgree" name="privacyAgree" required>
+                            <label for="privacyAgree">개인정보 수집 및 이용약관에 동의합니다. <span class="required">(필수)</span></label>
+                        </div>
+                        <span class="error-msg block-error" id="privacy-error">이용약관 동의는 필수 사항입니다.</span>
+
+                        <button type="submit" class="btn btn-accent btn-block btn-lg" id="submitBtn">
+                            <span>문의하기 송신</span>
+                            <i class="fa-solid fa-paper-plane"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 푸터 -->
+    <footer class="site-footer">
+        <div class="container footer-grid">
+            <div class="footer-info">
+                <img src="images/logo.png" alt="그린테이블 로고" class="footer-logo">
+                <p class="footer-brand-desc">건강한 일상과 푸른 지구를 생각하는 프리미엄 도시락&샐러드 브랜드, 그린테이블입니다.</p>
+                <div class="footer-social">
+                    <a href="#" aria-label="카카오톡"><i class="fa-solid fa-comment"></i></a>
+                    <a href="#" aria-label="인스타그램"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#" aria-label="페이스북"><i class="fa-brands fa-facebook-f"></i></a>
+                </div>
+            </div>
+            
+            <div class="footer-links">
+                <h4>빠른 링크</h4>
+                <ul>
+                    <li><a href="#home">메인 홈</a></li>
+                    <li><a href="#brand">브랜드 스토리</a></li>
+                    <li><a href="#menu">메뉴 라인업</a></li>
+                    <li><a href="#eco">친환경 가치</a></li>
+                    <li><a href="#contact">주문 문의</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-contact">
+                <h4>그린테이블 고객센터</h4>
+                <p><i class="fa-solid fa-envelope"></i> 이메일: support@greentable.com</p>
+                <p><i class="fa-solid fa-phone"></i> 대표번호: 1544-0000</p>
+                <p><i class="fa-solid fa-location-dot"></i> 주소: 서울특별시 마포구 백범로 31, 그린테이블 스퀘어 4층</p>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <div class="container">
+                <p>&copy; 2026 그린테이블 (Green Table). All Rights Reserved. Designed by Antigravity.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- FAB (Floating Action Button) - 카카오톡 1:1 상담하기 -->
+    <div class="fab-wrapper" id="fab-wrapper">
+        <a href="https://pf.kakao.com" target="_blank" class="fab-btn" aria-label="카카오톡 1:1 상담하기">
+            <i class="fa-solid fa-comment-dots"></i>
+            <span class="tooltip">1:1 상담</span>
+        </a>
+    </div>
+
+    <!-- 모바일 전용 Sticky 하단 고정 CTA 버튼 -->
+    <div class="mobile-sticky-cta" id="mobile-sticky-cta">
+        <a href="#contact" class="btn btn-accent btn-block btn-sticky">실시간 간편 문의하기</a>
+    </div>
+
+    <!-- 스크립트 파일 로드 -->
+    <script src="js/script.js"></script>
+</body>
+</html>
